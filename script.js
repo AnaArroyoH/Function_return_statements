@@ -5,8 +5,8 @@ const bigNumber = function (number) {
     } return false;
 }
 
-console.log(bigNumber(54));
-// console.log(bigNumber(101));
+// console.log(bigNumber(54));
+console.log(bigNumber(101));
 
 //Bouncer at a club:
 const brendaBouncerBot = function ([age, peopleInside]) {
@@ -20,19 +20,21 @@ const brendaBouncerBot = function ([age, peopleInside]) {
 }
 
 // const enterClub = brendaBouncerBot([17, 98]);
-// const enterClub = brendaBouncerBot([23, 102]);
-const enterClub = brendaBouncerBot([34, 95]);
+const enterClub = brendaBouncerBot([23, 102]);
+// const enterClub = brendaBouncerBot([34, 95]);
 console.log(enterClub);
 
 //Calculating the average:
 const calculateAverage = function (numbers) {
-    const average = numbers.reduce((total, n) => total + n) / numbers.lenght;
-    console.log(average);
-    // return average;
+    const average = numbers.reduce((total, n) => total + n) / numbers.length;
+    // console.log(average);
+    return average;
 };
 
-const randomNumbers = [3, 6, 4, 8, 2];
-calculateAverage(randomNumbers);
+// const randomNumbers = calculateAverage ([3, 6, 4, 8, 2]);
+// const randomNumbers = calculateAverage ([5, 45, 28, 99, 68]);
+const randomNumbers = calculateAverage ([56, 55, 131, 43, 7]);
+// calculateAverage(randomNumbers); Dit was niet goed zo
 
-const ages = [14, 56, 32, 44, 78];
-calculateAverage(ages);
+console.log(Math.round (randomNumbers));
+// console.log(randomNumbers);
